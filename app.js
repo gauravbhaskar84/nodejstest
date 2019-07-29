@@ -1,4 +1,4 @@
-# This code was taken from the internet to perform the test:
+# This code was taken from the internet to perform the test
 
 const http = require('http');
 const os = require('os');
