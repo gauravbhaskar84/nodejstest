@@ -1,0 +1,11 @@
+# Default values for nodejs app.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# image repository for the nodejs
+image:
+  repository: gauravbhaskar84/nodejs
+  tag: v3
+ 
+hostname: node.dreamlines.io
+controller: traefik-external

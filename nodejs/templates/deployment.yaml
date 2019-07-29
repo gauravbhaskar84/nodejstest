@@ -1,0 +1,15 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: node
+spec:
+  replicas: 3
+  template:
+    metadata:
+      name: node
+      labels:
+        app: node
+    spec:
+      containers:
+      - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        name: nodejs
