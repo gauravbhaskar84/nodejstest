@@ -32,9 +32,9 @@ Run the below command to install this app:
 
 Check the status for the app:
 
-`helm status nodejs-0.1.0.tgz`
+`helm status nodejs-app`
 
-The app can be accssed with the url or hostname mentioned, e.g. if the hostname is given as `xyz.appledesign.co`, we can now accsessed this application. `appledesign.co` must be there in the DNS with wild card support.
+The app can be accssed using the url or hostname mentioned in the values.yaml file, e.g. if the hostname is given as `xyz.appledesign.co`, we can now accsess this application. We need to make sure that `appledesign.co` must be there in the DNS with wild card support.
 
 We can also run the below command at the command line to see the output, the app we deployed will print the hostname of the Pod.
 
@@ -52,7 +52,7 @@ Now after we generate a new package for nodejs app, we can simply update that wi
 This will upgrade the app to te newest verison we can access the result in the similar manner,
 `while true; do curl https://xyz.appledesign.co; done`.
 
-O/P of now will grdually be like below:
+O/P will grdually be like below, we will notice that, how kubernetes smartly replaces the Pods from version 1 to version 2.
 
 `This is version 2 running in pod <pod's hostname>`
 

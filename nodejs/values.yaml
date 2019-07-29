@@ -5,7 +5,9 @@
 # image repository for the nodejs
 image:
   repository: gauravbhaskar84/nodejs
-  tag: v3
+  tag: v2
  
-hostname: node.dreamlines.io
-controller: traefik-external
+# hostname must be changed to access the application, e.g. `appledesign.co` must be accessible using DNS with will card support 
+hostname: xyz.appledesign.co
+# controller name must match with the ingress controller installed, I used trafeik
+controller: traefik
